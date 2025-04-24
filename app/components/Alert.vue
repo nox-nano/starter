@@ -1,32 +1,8 @@
 <template>
-  <div class="alert" :style="{ 'border-color': color }">
+  <div class="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-secondary h-6 w-6 shrink-0">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+    </svg>
     <slot></slot>
   </div>
 </template>
-
-<script setup lang="ts">
-const { color } = defineProps({
-  color: {
-    type: String,
-    default: 'orange'
-  }
-})
-</script>
-
-<style scoped>
-.alert {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  border: 2px solid;
-  border-radius: 0.5rem;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.alert:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-</style>
