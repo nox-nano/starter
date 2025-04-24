@@ -1,3 +1,11 @@
-# About Content Version 3
-
+::navbar
+::
+::hero
+#companyName
+Expimmo
+#companyText
+hello world !
+#companyLink
+Continue
+::
 [Back home](/)

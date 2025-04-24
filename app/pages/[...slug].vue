@@ -14,6 +14,6 @@ if (!page.value) {
   <ContentRenderer
     v-if="page"
     :value="page"
-    class=""
+    class="w-full min-h-screen bg-base-200 text-base-content"
   />
 </template>
