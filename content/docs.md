@@ -15,7 +15,7 @@ En cas de difficulté, nous pouvons vous aidez, prévoir 60€ pour le bail et 6
 #doc-title-1
 Wallonie - Bail de résidence principale et annexe obligatoire
 #doc-link-1
-/documents/wallonie-bail-residence-principale.docx
+/docs
 
 #doc-title-2
 Wallonie - Bail de droit commun, annexe obligatoire
