@@ -4,7 +4,7 @@
 ::spacing
 ::
 
-::contactForm
+::pricingForm
 ::
 
 ::infos
