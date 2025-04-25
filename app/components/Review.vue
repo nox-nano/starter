@@ -43,7 +43,7 @@ const reviews = [1].map(i => ({
             </div>
         </div>
     </div>
-    <div class="mt-10 flex gap-10 items-center justify-center">
+    <div class="mt-10 flex flex-wrap gap-10 items-center justify-center">
         <img class="w-32" src="/cae.png"></img>
         <img class="w-24" src="/cibex.jpg"></img>
         <img class="w-24" src="/abex.png"></img>

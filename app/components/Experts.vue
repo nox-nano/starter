@@ -27,7 +27,7 @@ const experts = [1, 2].map(i => ({
         </p>
       </div>
       
-      <div class="grid grid-cols-2 gap-8 lg:max-w-5xl lg:mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:max-w-5xl lg:mx-auto">
         <div v-for="(expert, index) in experts" :key="index" 
              class="card card-xl bg-base-200 shadow-xl hover:shadow-2xl transition-shadow duration-300">
           <div class="card-body p-0">

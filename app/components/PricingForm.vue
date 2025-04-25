@@ -393,7 +393,7 @@ function resetForm() {
                   <td class="font-medium">{{ service.name }}</td>
                   <td class="text-right">
                     <button @click="formData.type = service.id"
-                            class="btn btn-primary-content btn-outline btn-sm">
+                            class="btn btn-primary-content btn-outline btn-xs md:btn-sm">
                       Sélectionner
                     </button>
                   </td>
@@ -420,7 +420,7 @@ function resetForm() {
                     @click="formData.answers[formData.currentStep] = option.text">
                   <td class="font-medium">{{ option.text }}</td>
                   <td class="text-right">
-                    <div v-if="formData.answers[formData.currentStep] === option.text" class="badge badge-primary-content badge-outline">Sélectionné</div>
+                    <div v-if="formData.answers[formData.currentStep] === option.text" class="badge badge-xs md:badge-sm lg:badge-lg badge-primary-content badge-outline">Sélectionné</div>
                   </td>
                 </tr>
               </tbody>
@@ -429,7 +429,7 @@ function resetForm() {
 
           <div class="card-actions justify-between mt-8">
             <button @click="prevStep" 
-                    class="btn btn-ghost"
+                    class="btn btn-sm lg:button-lg btn-ghost"
                     :disabled="formData.currentStep === 0">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24">
                 <path fill="none" stroke="currentColor" stroke-linecap="round" 
@@ -438,7 +438,7 @@ function resetForm() {
               Précédent
             </button>
             <button @click="nextStep"
-                    class="btn btn-primary-content btn-outline"
+                    class="btn btn-sm lg:button-lg btn-primary-content btn-outline"
                     :disabled="!formData.answers[formData.currentStep]">
               Suivant
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 24 24">
@@ -456,10 +456,10 @@ function resetForm() {
           </div>
           
           <div class="text-center space-y-8">
-            <div class="stats shadow mx-auto">
+            <div class="stats stats-vertical md:stats-horizontal  shadow mx-auto">
               <div class="stat">
                 <div class="stat-title">Type de service</div>
-                <div class="stat-value text-xl">{{ services.find(s => s.id === formData.type)?.name }}</div>
+                <div class="stat-value text-sm md:text-xl">{{ services.find(s => s.id === formData.type)?.name }}</div>
               </div>
               <div class="stat">
                 <div class="stat-title">Prix estimé</div>
@@ -468,7 +468,7 @@ function resetForm() {
             </div>
             
             <div class="flex flex-col gap-4">
-              <a href="/contact" class="btn btn-primary-content btn-outline btn-lg mx-auto w-64">
+              <a href="/contact" class="btn btn-sm btn-primary-content btn-outline lg:btn-lg mx-auto w-64">
                 Demander un devis
               </a>
               <button @click="resetForm" class="btn btn-ghost btn-sm mx-auto">
