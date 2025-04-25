@@ -32,7 +32,7 @@ const experts = [1, 2].map(i => ({
              class="card card-xl bg-base-200 shadow-xl hover:shadow-2xl transition-shadow duration-300">
           <div class="card-body p-0">
             <figure class="w-full h-64">
-              <img :src="expert.image" :alt="expert.name" class="w-full h-full object-cover object-top" />
+              <img :src="expert.image" :alt="expert.name" class="w-full h-full object-cover" />
             </figure>
             <div class="p-6 space-y-4">
               <div class="flex items-center gap-2">
