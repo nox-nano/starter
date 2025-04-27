@@ -15,16 +15,16 @@ const reviews = [1].map(i => ({
                 Ils nous font confiance
             </h2>
             <div class="rating mt-3">
-                <input type="radio" name="rating-1" class="mask mask-star" aria-label="1 star" />
-                <input type="radio" name="rating-1" class="mask mask-star" aria-label="2 star" />
-                <input type="radio" name="rating-1" class="mask mask-star" aria-label="3 star" checked="checked"/>
+                <input type="radio" name="rating-1" class="mask mask-star select-none" aria-label="1 star" />
+                <input type="radio" name="rating-1" class="mask mask-star select-none" aria-label="2 star" />
+                <input type="radio" name="rating-1" class="mask mask-star select-none" aria-label="3 star" checked="checked"/>
             </div>
         </div>
         <div class="mt-12 grid gap-8 max-w-xl mx-auto">
             <div 
             v-for="(review, index) in reviews" :key="index" 
             class="card bg-accent shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                <div class="card-body">
+                <div class="card-body ">
                     <h3 class="card-title text-lg font-medium text-accent-content">
                         <svg class="inline mr-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                           <g v-html="review.icon"></g>
@@ -43,7 +43,7 @@ const reviews = [1].map(i => ({
             </div>
         </div>
     </div>
-    <div class="mt-10 flex flex-wrap gap-10 items-center justify-center">
+    <div class="mt-10 flex flex-wrap gap-10 items-center justify-center px-3 md:px-0">
         <img class="w-32" src="/cae.png"></img>
         <img class="w-24" src="/cibex.jpg"></img>
         <img class="w-24" src="/abex.png"></img>

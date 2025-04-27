@@ -19,7 +19,7 @@ const services = [
 </script>
 <template>
   <div>
-    <div class="max-w-xl mx-auto py-12">
+    <div class="max-w-xl mx-auto py-12 px-3 md:px-0">
       <h1 class="text-4xl font-bold text-center mb-6">Nos Services</h1>
       <div v-for="(service, index) in services" :key="index" 
            class="collapse collapse-plus bg-base-100 border border-base-300 mb-2">

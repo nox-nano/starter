@@ -1,6 +1,7 @@
 <template>
     <div>
-        <div class="navbar fixed z-50 bg-white/80 justify-between px-2 md:px-16 lg:px-96">
+        <div class="navbar fixed z-50 bg-white/80 justify-evenly px-2 md:px-16">
+        
            <div class="flex-1 px-2 mx-2 lg:flex-none">
                <LogoCube class="w-12 inline mr-3" />
                <a href="/" class="text-3xl font-bold normal-case align-middle">Expimmo</a>
