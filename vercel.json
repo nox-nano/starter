@@ -5,15 +5,5 @@
     "app/pages/**/*.vue": {
       "maxDuration": 30
     }
-  },
-  "builds": [
-    {
-      "src": "nuxt.config.ts",
-      "use": "@nuxtjs/vercel-builder",
-      "config": {
-        "memory": 3008,
-        "maxDuration": 30
-      }
-    }
-  ]
+  }
 }
