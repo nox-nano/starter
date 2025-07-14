@@ -1,9 +1,0 @@
-{
-  "buildCommand": "bun run build",
-  "framework": "nuxtjs",
-  "functions": {
-    "app/pages/**/*.vue": {
-      "maxDuration": 30
-    }
-  }
-}
