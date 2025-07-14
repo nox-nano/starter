@@ -10,6 +10,12 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-04-03',
 
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio',
+    },
+  },
+
   vite: {
     plugins: [tailwindcss()],
   },
